@@ -2,6 +2,7 @@ import random
 import neat
 import os
 import time
+import visualize
 
 class Goal():
     """ Represents the ChangeUp Goal """
@@ -274,10 +275,11 @@ def run(config_file):
     #P.Add_reporter(Neat.Checkpointer(5))
 
     # Run For Up To 50 Generations.
-    winner = p.run(eval_genomes, 50)
+    winner = p.run(eval_genomes, 1000)
 
     # Show Final Stats
-    #print('\nbest Genome:\n{!s}'.format(winner))
+    print('\nbest Genome:\n{!s}'.format(winner))
+    visualize.draw_net(config,winner, True)
 
 
 if __name__ == "__main__":

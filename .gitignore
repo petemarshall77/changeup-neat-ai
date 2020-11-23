@@ -3,6 +3,13 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# output diagrams from visualize.py
+*.svg
+*.gv
+
+# EMACS
+*#
+
 # C extensions
 *.so
 
