@@ -9,6 +9,7 @@ __pycache__/
 
 # EMACS
 *#
+*~
 
 # C extensions
 *.so
